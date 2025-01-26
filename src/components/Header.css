@@ -1,0 +1,95 @@
+/* Header Container */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgb(255, 255, 255); /* Slightly opaque white background */
+    backdrop-filter: blur(10px); /* Glassy frosted effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: relative;
+    z-index: 10;
+}
+
+/* Logo */
+.logo svg {
+    width: 35px; /* Smaller logo size */
+    height: 35px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* Nav links styles */
+.nav-links a {
+    text-decoration: none;
+    color: #333; /* Dark gray color for links */
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.nav-links a:hover {
+    color: #f0db4f; /* Light yellow on hover */
+}
+
+/* For mobile responsiveness */
+.nav-links.active {
+    display: block;
+}
+
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    width: 30px; /* Adjusted size for consistency */
+    height: 25px; /* Slightly taller area to give space for bars */
+    position: relative;
+}
+
+.hamburger .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #333; /* Dark color for hamburger bars */
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect on the hamburger */
+.hamburger:hover .bar {
+    background-color: #f0db4f; /* Change bar color on hover */
+}
+
+/* Mobile styles: Show hamburger and hide nav links */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque background for the mobile menu */
+        padding: 20px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    /* Toggle active class for nav links */
+    .nav-links.active {
+        display: block;
+    }
+
+    /* Align hamburger menu icon properly */
+    .hamburger {
+        margin-right: 10px; /* Adjust space to the right */
+    }
+}

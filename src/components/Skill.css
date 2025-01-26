@@ -1,0 +1,85 @@
+.skills {
+    display: flex;
+    justify-content: flex-start; /* Left align content */
+    align-items: center;
+    height: 100vh;
+    background: url('./../components/img/Premium\ Photo\ _\ White\ office\ desk\ table\ with\ blank\ notebook\,\ laptop\ and\ other\ office\ supplies_\ Top\ view\ with\ copy\ space\,\ flat\ lay_.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: left; /* Left-aligned text */
+    position: relative;
+  }
+  
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* responsive grid */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px; /* Prevent it from stretching too wide */
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .skill-box {
+    background-color: #fff;
+    border: 2px solid #ddd; /* Initial border */
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Add transition for border-color */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .skill-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    border-color: #4285f4; /* Google Blue */
+  }
+  
+  .skill-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  
+  .skill-box span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Add Google-style colors for hover effect */
+  .skill-box:hover {
+    border-color: #4285f4; /* Google Blue */
+  }
+  
+  .skill-box:nth-child(2):hover {
+    border-color: #ea4335; /* Google Red */
+  }
+  
+  .skill-box:nth-child(3):hover {
+    border-color: #fbbc05; /* Google Yellow */
+  }
+  
+  .skill-box:nth-child(4):hover {
+    border-color: #34a853; /* Google Green */
+  }
+  
+  @media (max-width: 768px) {
+    .skills-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skills-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  

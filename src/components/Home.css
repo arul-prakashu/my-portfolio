@@ -1,0 +1,133 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    background-color: #ffffff; /* White background for clean design */
+    color: #000000; /* Black text for good readability */
+  }
+  
+  /* Home Section */
+  .home {
+    display: flex;
+    justify-content: flex-start; /* Left align content */
+    align-items: center;
+    height: 100vh;
+    background: url('./../components/img/download\ \(5\).jpg') no-repeat center center;
+    background-size: cover;
+    text-align: left; /* Left-aligned text */
+    position: relative;
+  }
+  
+  /* Content container */
+  .home-content {
+    padding: 20px;
+    max-width: 600px; /* Adjusted width for left-aligned content */
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent black background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Title Text */
+  .intro-title {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #000000; /* White text for title */
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: fadeInText 2s forwards;
+  }
+  
+  /* Intro text */
+  .intro-text {
+    font-size: 1.5em;
+    color: #000000; /* White text for intro text */
+    line-height: 1.6;
+    margin-bottom: 25px;
+    opacity: 0;
+    animation: fadeInText 2s forwards;
+    animation-delay: 1s;
+  }
+  
+  /* Find Me On Section */
+  .find-me-on {
+    margin: 20px 0;
+  }
+  
+  .find-me-on p {
+    font-size: 1.2em;
+    color: #000000; /* White color for social section */
+  }
+  
+  .social-link {
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #000000; /* White color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-link:hover {
+    color: #3e3838; /* Slightly lighter white on hover */
+  }
+  
+  /* Download Button */
+  .download-btn {
+    display: inline-block;
+    background-color: #000000; /* Black button */
+    color: #ffffff; /* White text on black button */
+    padding: 15px 40px;
+    font-size: 1.2em;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .download-btn:hover {
+    background-color: #333333; /* Slightly lighter black on hover */
+    transform: translateY(-5px);
+  }
+  
+  /* Fade In Animation */
+  @keyframes fadeInText {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .home-content {
+      padding: 20px;
+      max-width: 90%; /* Adjust content width on small screens */
+    }
+  
+    .intro-title {
+      font-size: 2.5em;
+    }
+  
+    .intro-text {
+      font-size: 1.2em;
+    }
+  
+    .download-btn {
+      font-size: 1.1em;
+      padding: 12px 30px;
+    }
+  }
+  

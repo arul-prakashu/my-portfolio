@@ -1,0 +1,132 @@
+/* General Section Styles */
+.projects {
+    display: flex;
+    justify-content: flex-start; /* Left align content */
+    align-items: center;
+    height: 100vh;
+    background: url('./../components/img/18\,002\,000+\ Home\ Pictures.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: left; /* Left-aligned text */
+    position: relative;
+  }
+  
+  .projects h2 {
+    font-size: 2.5rem; /* Larger font size */
+    color: #202124; /* Dark text color, similar to Google's color palette */
+    margin-bottom: 30px;
+    font-weight: bold; /* Bold header text */
+  }
+  
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .project-card {
+    background-color: #f1f3f4; /* Lighter background for cards */
+    border-radius: 12px; /* Slightly rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Lighter shadow for cleaner effect */
+    padding: 20px;
+    color: #202124; /* Dark text color for better readability */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid transparent; /* Border initially hidden */
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(244, 244, 244, 0.2); /* Stronger shadow on hover */
+    background-color: #ffffff; /* Lighter blue background on hover */
+    border-color: #000000; /* Google blue border */
+  }
+  
+  .project-card h3 {
+    font-size: 1.7rem; /* Larger font for project titles */
+    margin-bottom: 10px;
+    font-weight: bold; /* Bold project title */
+  }
+  
+  .company,
+  .duration {
+    color: #5f6368; /* Light gray color for metadata */
+    font-size: 0.9rem;
+    font-weight: 500; /* Slightly bolder text */
+  }
+  
+  .description {
+    margin: 15px 0;
+    font-size: 1rem;
+    color: #202124; /* Dark text color for description */
+    font-weight: 400; /* Regular font weight */
+  }
+  
+  .technologies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .tech {
+    background-color: #f8f9fa; /* Lighter background for tech badges */
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 0.9rem;
+    color: #202124; /* Dark text color for technology names */
+    font-weight: 600; /* Bold tech names */
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .tech:hover {
+    background-color: #000000; /* Google blue on hover */
+    color: #fff; /* White text on hover */
+  }
+  
+  .tech-icon {
+    font-size: 1.3rem;
+    margin-right: 8px;
+    color: #202124; /* Dark icons */
+  }
+  
+  .technologies .tech:hover .tech-icon {
+    color: #fff; /* White icons on hover */
+  }
+  
+  /* Button with Dynamic Hover */
+  .project-card button {
+    background-color: #d9f442; /* Google blue by default */
+    color: white; /* White font color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  .project-card button:hover {
+    background-color: #a2a834; /* Green color on hover */
+    color: #ffffff; /* White font on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .projects-container {
+      grid-template-columns: 1fr 1fr; /* Two columns for tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .projects-container {
+      grid-template-columns: 1fr; /* Single column for mobile */
+    }
+  }
+  

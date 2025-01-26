@@ -1,0 +1,109 @@
+/* General Section Styles */
+.contact {
+    justify-content: left; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+    background-image: url('./img/download\ \(1\).jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+  }
+  
+  .contact-container {
+    max-width: 600px; /* Smaller container width */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Light grey container background */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    color: #000; /* Dark text */
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Contact Details */
+  .contact-details {
+    margin-bottom: 30px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .contact-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #000; /* Dark icons */
+  }
+  
+  .contact-item p {
+    font-size: 1rem;
+    color: #000;
+  }
+  
+  .contact-item a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-item a:hover {
+    text-decoration: underline;
+    color: #aaa; /* Slightly lighter on hover */
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Reduced gap */
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px 15px; /* Smaller padding */
+    border-radius: 8px;
+    border: 1px solid #444; /* Subtle border */
+    font-size: 0.95rem; /* Slightly smaller font */
+    color: #000;
+    background-color: #ffffff; /* White background for form fields */
+    transition: border 0.3s ease;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border: 1px solid #444; /* Subtle border on focus */
+    outline: none;
+  }
+  
+  .contact-form button {
+    background-color: #000000; /* Dark button */
+    color: #ffffff;
+    padding: 12px 20px; /* Smaller button padding */
+    font-size: 1rem; /* Smaller button font */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    border: 1px solid #000000; /* White border on hover */
+    color: #000000;
+    background-color: #ffffff; /* Inverted button style on hover */
+  }
+  
+  .contact-form button:focus {
+    border: 1px solid #000000; /* White border on focus */
+  }
+  
