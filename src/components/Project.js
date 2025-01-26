@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaReact, FaNodeJs, FaGit, FaGithub, FaHtml5, FaCss3Alt } from 'react-icons/fa';
-import { SiJavascript, SiRedux, SiWebpack, SiBabel, SiJest } from 'react-icons/si';
+import { FaReact, FaHtml5, FaCss3Alt } from 'react-icons/fa';
+import { SiJavascript, SiWebpack } from 'react-icons/si';
 import { MdApi } from 'react-icons/md';
 import './Project.css';
 
